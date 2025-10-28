@@ -2,8 +2,8 @@ function wrap<T>(value: T) {
   return { value };
 }
 
-const wrapped = wrap<number>(42);
-console.log(wrapped);
+const wrappedNumber = wrap(67);
+console.log(wrappedNumber);
 
 const wrappedText = wrap("Hello!");
 console.log(wrappedText);
