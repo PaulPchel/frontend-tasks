@@ -1,0 +1,146 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+}
+
+#header-title {
+  margin: 0;
+}
+
+
+#add-btn, #settings-btn {
+  font-size: 18px;
+  font-weight: bold;
+  background: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+
+#add-btn {
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+
+#settings-btn {
+  color: black;
+  border: 2px solid black;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+#todo-input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  color: black;
+  background-color: #fff;
+}
+
+
+body.dark #todo-input {
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #555;
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+li {
+  background: white;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+li.done .task-text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+
+li button {
+  text-decoration: none;
+}
+
+.modal, .settings-panel {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content, .settings-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+
+#empty-msg {
+  text-align: center;
+  color: gray;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+
+body.dark {
+  background: #222;
+  color: #eee;
+}
+
+body.dark li {
+  background: #333;
+}
+
+body.dark header {
+  background-color: #007bff;
+}
+
+body.dark #header-title {
+  color: black; 
+}
+
+body.dark .settings-content {
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+
+
+
